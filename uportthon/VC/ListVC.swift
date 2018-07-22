@@ -54,8 +54,8 @@ class ListVC: UITableViewController {
 
       return cell
     }
-  let emails = ["sato@gmail.co.com","suzuki@gmail.co.com","takahasi@gmail.co.com"]
-  let names = ["sato","suzuki","takahasi"]
+  let emails = ["sato@gmail.co.com", "suzuki@gmail.co.com", "takahasi@gmail.co.com"]
+  let names = ["sato", "suzuki", "takahasi"]
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if let email = Store.shared.list[indexPath.row]["email"].string {
@@ -72,8 +72,8 @@ class ListVC: UITableViewController {
     Store.shared.list[indexPath.row]["email"] = JSON(emails[indexPath.row])
     tableView.reloadData()
   }
-  
-  func sendMail(email:String){
+
+  func sendMail(email: String) {
     //メールを送信できるかチェック
     if MFMailComposeViewController.canSendMail()==false {
       return
@@ -88,6 +88,6 @@ class ListVC: UITableViewController {
   }
 }
 
-extension ListVC:MFMailComposeViewControllerDelegate{
+extension ListVC: MFMailComposeViewControllerDelegate {
 
 }
