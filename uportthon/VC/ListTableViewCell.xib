@@ -62,6 +62,12 @@
                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-EW-nIK">
+                        <rect key="frame" x="149.5" y="97" width="48" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="ATW-Ak-Suf" secondAttribute="trailing" constant="11" id="0MF-Fh-KIT"/>
@@ -70,6 +76,8 @@
                     <constraint firstItem="gPg-tR-GdR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dkg-iG-y3O"/>
                     <constraint firstItem="Sst-Rs-142" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SCs-J9-P6M"/>
                     <constraint firstAttribute="trailingMargin" secondItem="23y-5v-Tat" secondAttribute="trailing" constant="6" id="W5n-II-jNz"/>
+                    <constraint firstItem="JWY-EW-nIK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bVl-2O-Jhw"/>
+                    <constraint firstItem="JWY-EW-nIK" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="irv-vs-NnO"/>
                     <constraint firstItem="gPg-tR-GdR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nnO-vb-eCI"/>
                     <constraint firstItem="J6g-z3-zQL" firstAttribute="top" secondItem="Sst-Rs-142" secondAttribute="bottom" constant="22" id="oDk-n0-faz"/>
                     <constraint firstItem="23y-5v-Tat" firstAttribute="top" secondItem="ATW-Ak-Suf" secondAttribute="bottom" constant="22" id="pyP-ch-dFG"/>
@@ -79,6 +87,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="contribution" destination="JWY-EW-nIK" id="nGA-Uw-6y2"/>
                 <outlet property="email" destination="J6g-z3-zQL" id="LEA-Fa-bxS"/>
                 <outlet property="hoby" destination="23y-5v-Tat" id="4ge-0b-eJd"/>
                 <outlet property="lang" destination="ATW-Ak-Suf" id="aBH-i9-4Vk"/>

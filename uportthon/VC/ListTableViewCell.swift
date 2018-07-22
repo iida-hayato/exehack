@@ -15,6 +15,11 @@ class ListTableViewCell: UITableViewCell {
   @IBOutlet weak var hoby: UILabel!
   @IBOutlet weak var lang: UILabel!
   @IBOutlet weak var name: UILabel!
+
+  @IBOutlet weak var gender: UILabel!
+  @IBOutlet weak var contribution: UILabel!
+
+
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

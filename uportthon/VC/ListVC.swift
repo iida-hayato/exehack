@@ -46,7 +46,12 @@ class ListVC: UITableViewController {
       let v = Store.shared.list[indexPath.row]
       cell.name.text = v["name"].stringValue
       cell.lang.text = v["home_city"].stringValue
-      cell.hoby.text = v["current_city"].stringValue
+      cell.hoby.text = v["interests"].stringValue
+      let r = (0...(v["contribution"].intValue / 10)).reduce("") { (pre, i) -> String in
+        "\(pre)⭐"
+      }
+
+      cell.contribution.text = r
       cell.email.text = v["email"].stringValue
       if let i = v["image"].string {
         cell.userImage.image = UIImage(named: i)
