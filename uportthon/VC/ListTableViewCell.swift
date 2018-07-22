@@ -11,6 +11,7 @@ import UIKit
 class ListTableViewCell: UITableViewCell {
   @IBOutlet weak var userImage: UIImageView!
 
+  @IBOutlet weak var email: UILabel!
   @IBOutlet weak var hoby: UILabel!
   @IBOutlet weak var lang: UILabel!
   @IBOutlet weak var name: UILabel!

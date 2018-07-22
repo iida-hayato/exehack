@@ -25,6 +25,7 @@
 		0B61097921021CAF00E26920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B61097721021CAF00E26920 /* LaunchScreen.storyboard */; };
 		0B61098421021CAF00E26920 /* uportthonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61098321021CAF00E26920 /* uportthonTests.swift */; };
 		0B80CC49210414AA00E475D7 /* BTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80CC47210414AA00E475D7 /* BTCData.m */; };
+		0B80CC4B2104320C00E475D7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B80CC4A2104320C00E475D7 /* MessageUI.framework */; };
 		B689273E15A0E547C28DFBFF /* Pods_uportthonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B071AF66B69558F0DABF330 /* Pods_uportthonTests.framework */; };
 		B73F3D2DFD00AEBEFB2CBEC3 /* Pods_uportthon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0DEB46E83D21E951F2CDFD /* Pods_uportthon.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		0B61098521021CAF00E26920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B80CC47210414AA00E475D7 /* BTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCData.m; sourceTree = "<group>"; };
 		0B80CC48210414AA00E475D7 /* BTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCData.h; sourceTree = "<group>"; };
+		0B80CC4A2104320C00E475D7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0F0DEB46E83D21E951F2CDFD /* Pods_uportthon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uportthon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B92E0BA88331C7B259523D /* Pods-uportthonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uportthonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uportthonTests/Pods-uportthonTests.release.xcconfig"; sourceTree = "<group>"; };
 		182DD57B2431A77C986EFF30 /* Pods-uportthon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uportthon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uportthon/Pods-uportthon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B80CC4B2104320C00E475D7 /* MessageUI.framework in Frameworks */,
 				B73F3D2DFD00AEBEFB2CBEC3 /* Pods_uportthon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		328C00A244EAAFA2F3B18CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B80CC4A2104320C00E475D7 /* MessageUI.framework */,
 				0F0DEB46E83D21E951F2CDFD /* Pods_uportthon.framework */,
 				4B071AF66B69558F0DABF330 /* Pods_uportthonTests.framework */,
 			);
